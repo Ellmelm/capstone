@@ -1,0 +1,21 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Generated pipeline outputs
+output/
+
+# Keep data folder but ignore all contents
+/data/*
+!/data/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db

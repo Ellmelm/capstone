@@ -1,0 +1,37 @@
+
+cell_size_m: 0.25
+
+align:
+  max_surface_variation: 0.15
+
+walkable:
+  normal_min_z: 0.7
+  min_height_m: -0.8
+  max_height_m: 2.0
+  traj_radius_m: 3.0
+  sensor_below_min_m: 0.6
+  sensor_below_max_m: 2.2
+  min_points_per_cell: 3
+  seed_band_m: 0.2
+  max_step_m: 0.2
+  link_radius_cells: 1
+
+segment:
+  flat_max_deg: 3.0
+  ramp_max_deg: 15.0
+
+measure:
+  obstacle_z_min_m: 0.3    # สิ่งกีดขวาง = จุดที่สูงจากพื้นช่วงนี้
+  obstacle_z_max_m: 1.8
+  spread_window_m: 1.5
+  width_cap_m: 3.0
+
+score:
+  slope_ok_deg: 3.0        # ไม่เกินนี้ได้ 100 คะแนน
+  slope_fail_deg: 8.0      # ตั้งแต่นี้ขึ้นไปได้ 0
+  width_fail_m: 0.8        # แคบกว่านี้ได้ 0
+  width_ok_m: 1.5          # กว้างกว่านี้ได้ 100
+  bands:                   # ตามสไลด์: Critical 0-15, Very Low 16-30, Low 31-50, High 51-100
+    critical: 15
+    very_low: 30
+    low: 50
